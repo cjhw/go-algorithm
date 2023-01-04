@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func generateMatrix(n int) [][]int {
 	left, right := 0, n-1
 	top, bottom := 0, n-1
@@ -34,8 +32,4 @@ func generateMatrix(n int) [][]int {
 		left++
 	}
 	return matrix
-}
-
-func main() {
-	fmt.Printf("generateMatrix(3): %v\n", generateMatrix(3))
 }
