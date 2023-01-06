@@ -1,4 +1,4 @@
-package main
+package array
 
 func minSubArrayLen(target int, nums []int) int {
 	i := 0

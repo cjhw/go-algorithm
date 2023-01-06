@@ -1,4 +1,4 @@
-package main
+package array
 
 func sortedSquares(nums []int) []int {
 	length := len(nums)
