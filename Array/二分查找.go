@@ -1,4 +1,4 @@
-package array
+package Array
 
 func search(nums []int, target int) int {
 	low := 0

@@ -1,4 +1,4 @@
-package string
+package String
 
 func reverseLeftWords(s string, n int) string {
 	b := []byte(s)

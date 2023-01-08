@@ -1,4 +1,4 @@
-package doublepointer
+package DoublePointer
 
 import "sort"
 

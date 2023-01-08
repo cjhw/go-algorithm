@@ -1,4 +1,4 @@
-package string
+package String
 
 // func replaceSpace(s string) string {
 
