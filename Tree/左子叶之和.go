@@ -7,11 +7,11 @@ func sumOfLeftLeaves(root *TreeNode) int {
 
 	left := sumOfLeftLeaves(root.Left)
 
+	right := sumOfLeftLeaves((root.Right))
+
 	if root.Left != nil && root.Left.Left == nil && root.Left.Right == nil {
 		left = root.Left.Val
 	}
-
-	right := sumOfLeftLeaves((root.Right))
 
 	return left + right
 }
