@@ -18,5 +18,4 @@ func convertBST(root *TreeNode) *TreeNode {
 	traverse(root)
 
 	return root
-
 }
