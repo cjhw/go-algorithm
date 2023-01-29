@@ -1,11 +1,11 @@
 package Recall
 
-var (
-	res  [][]string
-	path []string
-)
-
 func partition(s string) [][]string {
+
+	var (
+		res  [][]string
+		path []string
+	)
 
 	path, res = make([]string, 0), make([][]string, 0)
 
