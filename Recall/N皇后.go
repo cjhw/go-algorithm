@@ -2,6 +2,8 @@ package Recall
 
 import "strings"
 
+// rune类型占4个字节 byte类型占一个字节
+
 func solveNQueens(n int) [][]string {
 	var res [][]string
 
@@ -17,7 +19,7 @@ func solveNQueens(n int) [][]string {
 		}
 	}
 
-		var isVaild func(n,row,col int,chessboard [][]string)  bool
+	var isVaild func(n,row,col int,chessboard [][]string)  bool
 	
 	isVaild=func(n, row, col int, chessboard [][]string) bool{
 
@@ -55,12 +57,14 @@ func solveNQueens(n int) [][]string {
 
 		for i:=0;i<n;i++ {
 			if isVaild(n,row,i,chessboard) {
-
+				chessboard[row][i] = "Q"
+				backtrack(row+1)
+				chessboard[row][i] = "."
 			}
 		}
 	}
 
-
+	backtrack(0)
 
 	return res
 	
