@@ -8,7 +8,7 @@ type TreeNode struct {
 
 func minCameraCover(root *TreeNode) int {
 
-	// 	0：该节点无覆盖
+	// 0：该节点无覆盖
 	// 1：本节点有摄像头
 	// 2：本节点有覆盖
 
